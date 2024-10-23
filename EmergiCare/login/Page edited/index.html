@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        input, select {
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+        .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        button {
+            
+            padding: 10px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: none;
+            margin-top: 10px;
+           
+            
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            color: black;
+            text-decoration: none;
+        }
+        label{
+            margin-top: 2px;
+            text-align: left;
+           
+        
+        }
+        .log {
+            vertical-align: baseline;
+        }
+        .log a{
+            color: blue;
+            
+        }
+        .log a:hover{
+            color: black;
+            
+        }
+      button:hover{
+        background-color: white;
+        color: black;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-arrow">←</div>
+        <h1>Create new Account</h1>
+        <div class="log">
+        <span>Already Registered?<a href="#">Login</a></span><br>
+        </div>
+        <form>
+            <label>FULL NAME</label>
+            <input type="text" placeholder="Jiara Martins" value="">
+            <label>EMAIL</label>
+            <input type="email" placeholder="hello@reallygratste.com" value="">
+            <label>PASSWORD</label>
+            <input type="password" placeholder="*******" value="**">
+            <label>DATE OF BIRTH</label>
+            <input type="date" name="date">
+            <button type="submit">sign up</button>
+        </form>
+    </div>
+</body>
+</html>
